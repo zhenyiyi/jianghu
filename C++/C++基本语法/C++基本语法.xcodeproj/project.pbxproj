@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51C4C4BE1E1E6D9100184516 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51C4C4BC1E1E6D9100184516 /* Person.cpp */; };
 		BA9606DF1E1DD4B000E3582E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA9606DE1E1DD4B000E3582E /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		51C4C4BC1E1E6D9100184516 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		51C4C4BD1E1E6D9100184516 /* Person.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
 		BA9606DB1E1DD4B000E3582E /* C++基本语法 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "C++基本语法"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9606DE1E1DD4B000E3582E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				BA9606DE1E1DD4B000E3582E /* main.cpp */,
+				51C4C4BC1E1E6D9100184516 /* Person.cpp */,
+				51C4C4BD1E1E6D9100184516 /* Person.hpp */,
 			);
 			path = "C++基本语法";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C4C4BE1E1E6D9100184516 /* Person.cpp in Sources */,
 				BA9606DF1E1DD4B000E3582E /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +255,7 @@
 				BA9606E41E1DD4B000E3582E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

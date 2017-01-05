@@ -7,10 +7,18 @@
 //
 
 #include <iostream>
+#include "Person.cpp"
+#include <stdio.h>
+
+
 
 using namespace std;  // 告诉编译器使用 std 命名空间
 
 typedef int feet;
+
+int maxIn(int a, int b); // 函数声明;
+
+void fetchData(string, string *);
 
 int main(int argc, const char * argv[]) {
     
@@ -37,7 +45,7 @@ int main(int argc, const char * argv[]) {
     
     */
     
-    
+    /*
     //2、您可以使用 typedef 为一个已有的类型取一个新的名字
     
     feet distance;
@@ -60,27 +68,70 @@ int main(int argc, const char * argv[]) {
     printf("c = %d\n",c);
     
     
+    printf("max -> %d \n",maxIn(10, 20));
     
     
     
+//  左值（lvalue）：指向内存位置的表达式被称为左值（lvalue）表达式。左值可以出现在赋值号的左边或右边。
+
+//  右值（rvalue）：术语右值（rvalue）指的是存储在内存中某些地址的数值。
     
     
     
+    int area = LENGTH * WIDTH;
+    
+    cout << area;
+    
+    cout << NEWLINE;
+    
+    printf("%d\n",HEIGHT);
     
     
     
+    short int x ;
     
+    short unsigned int y;
     
+    y = 20000;
     
+    x = y;
     
+    printf("x->%d y->%d",x,y);
+    */
     
+    /*
+    int i = 10;
+    int j = i;
     
+    printf("i = %d",j);
     
+    int k = i;
     
+    printf("i = %d\n",k);
     
+    const int size = 100;
     
+    int arr[size];
     
+    printf("sizeof(arr) -> %lu\n",sizeof(arr));
     
+    int * ptr = (int *) malloc(sizeof(arr));
+    
+    ptr[0] = 10;
+    
+    ptr[1] = 100;
+    
+    printf("%d \n",*ptr);
+    
+    string error;
+    
+    fetchData("", &error);
+    
+    printf("error->%s\n",error.c_str());
+    */
+    
+    int mount;
+    auto int month;
     
     
     
@@ -98,4 +149,18 @@ int main(int argc, const char * argv[]) {
     
     
     return 0;
+}
+
+
+void fetchData(string name , string *  errorMsg){
+    *errorMsg = "12345";
+}
+
+
+//函数实现
+int maxIn(int a, int b){
+    if (a > b) {
+        return  a;
+    }
+    return b;
 }
